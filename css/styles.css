@@ -31,6 +31,7 @@ a {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 body {
@@ -47,7 +48,24 @@ body {
 }
 
 .section {
-    padding: 80px 0 80px 0;
+  padding: 80px 0 80px 0;
+}
+
+.btn {
+  padding: 20px 28px;
+  border: 1px solid var(--accent-color);
+  border-radius: 16px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 400;
+  background-color: var(--accent-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #dbf0ff;
+  color: var(--accent-color);
 }
 
 /* Стилі хедера */
@@ -60,12 +78,27 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
+
+/* .header-container::after {
+  content: "";
+  position: absolute;
+  width: 1240px;
+  height: 1240px;
+  border-radius: 50%;
+  background-color: #c2e6ff;
+  right: -550px;
+  top: -500px;
+  z-index: 2;
+} */
 
 .header-navigation-list {
   display: flex;
   align-items: center;
   gap: 60px;
+  position: relative;
+  z-index: 3;
 }
 
 .header-navigation-link {
@@ -80,7 +113,89 @@ body {
 /* Стилі першої секції */
 
 .hero {
-    background-color: #DBF0FF;
+  background-color: #dbf0ff;
+  padding-bottom: 215px;
+}
+
+.hero-container {
+  position: relative;
+}
+
+.hero-block-info {
+  width: 573px;
+}
+
+.hero-block-info-suptitle {
+  font-family: Montserrat;
+  line-height: 1.3;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.hero-block-info-title {
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-block-info-text {
+  line-height: 1.2;
+  margin-bottom: 48px;
+  position: relative;
+  z-index: 2;
+}
+
+.socs {
+height: 680px;
+position: absolute;
+z-index: 3;
+top: -80px;
+left: 500px;
+}
+
+.hero-block-img-cotton {
+  height: 184px;
+  position: absolute;
+  bottom: 120px;
+  right: 55px;
+}
+
+.cotton-container {
+  position: absolute;
+  width: 330px;
+  height: 330px;
+  border-right: 2px solid #010101;
+  border-left: 2px solid #010101;
+  border-radius: 50%;
+  right: 20px;
+  bottom: -200px;
+  z-index: 3;
+}
+
+.cotton {
+  height: 183px;
+  transform: rotate(7.525deg);
+  position: absolute;
+  right: 70px;
+  bottom: 65px;
+}
+
+.icon-quality {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  z-index: 3;
+}
+
+.icon-great {
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  z-index: 5;
 }
 
 /* Стилі другої секції */
